@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon ./src/server.js -e js",
+    "sass": "sass ./public/styles/scss/styles.scss:./public/styles/css/styles.css --watch --no-source-map"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "commander": "^4.1.1",
+    "cors": "^2.8.5",
+    "cross-spawn": "^7.0.3",
+    "express": "^4.18.1",
+    "isexe": "^2.0.0",
+    "mongoose": "^6.4.4",
+    "path-key": "^3.1.1",
+    "shebang-command": "^2.0.0",
+    "shebang-regex": "^3.0.0",
+    "which": "^2.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
